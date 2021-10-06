@@ -1,12 +1,76 @@
 <html>
-    <style>
+    <head>
+        <title>Kuunai :- About</title>
+    </head>
 
+    <style>
+        body {
+            font-family: Calibri;
+
+            color: #FFF;
+            background-color: #111;
+        }
+
+        #container {
+            position: absolute;
+            left: 50%;
+            margin-left: -200px;
+            padding: 32px 0px;
+            width: 400px;
+        }
+
+        #container .rule {
+            display: inline-block;
+            margin: 32px 4%;
+            width: 92%;
+            height: 128px;
+
+            border: solid #FD0 1px;
+            box-shadow: #FD0 0px 0px 4px, #FFA 0px 0px 1px;
+        }
+
+        #container .rule .subtitle {
+            position: absolute;
+            margin: -32px 8px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #container .rule .body {
+            margin: 8px;
+            color: #CCC;
+        }
+
+        #container .rule .body p {
+            margin: 4px;
+            font-size: 14px;
+        }
     </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <body>
-        <div id="main">
-            <p class="subtitle">about the mun.</p>
-            <p class="body">AAAAAAAAAAAAAAAAAAAAA</p>
+        <div id="container">
+
+            <div class="rule">
+                <div class="subtitle">about the mun.</div>
+                <div class="body">
+                    <p>One.</p>
+                    <p>Two.</p>
+                </div>
+            </div>
+
+            <div class="rule">
+                <p class="subtitle"></p>
+                <p class="body"></p>
+            </div>
+
+            <div class="rule">
+                <p class="subtitle"></p>
+                <p class="body"></p>
+            </div>
+
         </div>
     </body>
 </html>
