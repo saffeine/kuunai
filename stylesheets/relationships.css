@@ -146,9 +146,9 @@ body {
 #information .body {
     display: inline-block;
     position: absolute;
-    margin: 200px 3%;
+    margin: 180px 3%;
     width: 94%;
-    height: calc( ( 94vh - 200px ) );
+    height: calc( ( 90vh - 200px ) );
 
     text-align: justify;
 
@@ -180,7 +180,7 @@ body {
     color: var( --bold-text );
     font-size: 28px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 #information .body::-webkit-scrollbar {
