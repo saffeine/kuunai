@@ -200,7 +200,13 @@ body {
 }
 
 relationships {
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
     opacity: 0;
     position: absolute;
     pointer-events: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
