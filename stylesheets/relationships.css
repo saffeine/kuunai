@@ -117,7 +117,7 @@ body {
     display: inline-block;
     position: fixed;
     margin: 0px 160px;
-    width: 40vw;
+    width: 640px;
     height: 100vh;
 
     color: #888;
@@ -146,8 +146,8 @@ body {
 #information .body {
     display: inline-block;
     position: absolute;
-    margin: 16vh 5%;
-    width: 90%;
+    margin: 16vh 3%;
+    width: 94%;
     height: 80%;
 
     text-align: justify;
@@ -160,7 +160,7 @@ body {
 
 #information .body p {
     margin: 16px 0px 32px 0px;
-    width: 98%;
+    width: 96%;
 }
 
 #information .body b {
@@ -189,7 +189,6 @@ body {
 }
 
 #information .body::-webkit-scrollbar-thumb {
-    margin-left: 8px;
     width: 4px;
     background-color: var( --bold-text );
 }
