@@ -20,6 +20,8 @@ body {
 
     margin: 0px;
     background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #sidebar {
@@ -166,6 +168,10 @@ body {
 #information .body b {
     color: var( --bold-text );
     font-weight: normal;
+}
+
+#information .body img {
+    width: 100%;
 }
 
 #information .body spacer {
