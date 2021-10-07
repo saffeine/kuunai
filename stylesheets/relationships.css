@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Anke;
+    src: url( "../fonts/anke.ttf" );
+}
+
+@font-face {
+    font-family: Helmet;
+    src: url( "../fonts/helmet.ttf" );
+}
+
+@font-face {
+    font-family: Questrial;
+    src: url( "../fonts/questrial.ttf" );
+}
+
+body {
+    --normal-text: #AAA;
+    --header-text: #DDD;
+    --bold-text: #FA0;
+
+    margin: 0px;
+    background-color: #111;
+}
+
+#sidebar {
+    direction: rtl;
+
+    display: inline-block;
+    position: fixed;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 100%;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    border-right: solid #FFF2 1px;
+}
+
+#sidebar a {
+    float: left;
+
+    display: inline-block;
+    position: relative;
+    
+    margin: 4px 8px;
+    width: 112px;
+    height: 64px;
+
+    text-align: center;
+    overflow-x: hidden;
+
+    border-left: solid var( --bold-text ) 0px;
+    transition-duration: 0.2s;
+    background-color: #FFF4;
+}
+
+#sidebar a img {
+    float: left;
+    width: auto;
+    height: 100%;
+
+    filter: saturate( 20% );
+    transition-duration: 0.5s;
+}
+
+#sidebar a title {
+    background-color: #F00;
+    width: 64px;
+}
+
+#sidebar a:hover {
+    border-left: solid var( --bold-text ) 8px;
+    transition-duration: 0.2s;
+}
+
+#sidebar a:hover img {
+    filter: saturate( 100% );
+}
+
+#sidebar .divider {
+    display: inline-block;
+    width: 90%;
+    height: 40px;
+
+    text-align: left;
+    
+    float: left;
+    color: #FFF;
+}
+
+#sidebar .divider p {
+    float: left;
+    font-size: 16px;
+    font-family: Helmet;
+    margin: 24px 8px;
+    white-space: nowrap;
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 4px;
+    left: 0px;
+    background-color: #FFF2;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    width: 4px;
+    left: 0px;
+    border-top: solid #FFF 2px;
+    border-bottom: solid #FFF 2px;
+    background-color: #FFF8;
+}
+
+#information {
+    display: inline-block;
+    position: fixed;
+    margin: 0px 160px;
+    width: 40vw;
+    height: 100vh;
+
+    color: #888;
+    background-color: #0005;
+}
+
+#information .header {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 128px;
+
+    text-align: center;
+
+    font-size: 8vh;
+    font-family: Questrial;
+
+    color: #DDD;
+}
+
+#information .header p {
+    margin: 5vh 0px 2px 0px;
+    border-bottom: solid #FFF4 1px;
+}
+
+#information .body {
+    display: inline-block;
+    position: absolute;
+    margin: 16vh 5%;
+    width: 90%;
+    height: 80%;
+
+    text-align: justify;
+
+    font-size: 2vh;
+    font-family: Calibri;
+
+    overflow-y: auto;
+}
+
+#information .body p {
+    margin: 16px 0px 32px 0px;
+    width: 98%;
+}
+
+#information .body b {
+    color: var( --bold-text );
+    font-weight: normal;
+}
+
+#information .body spacer {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+}
+
+#information .body divider {
+    display: inline-block;
+    width: 100%;    
+    color: var( --bold-text );
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#information .body::-webkit-scrollbar {
+    width: 4px;
+    background-color: #EEE4;
+}
+
+#information .body::-webkit-scrollbar-thumb {
+    margin-left: 8px;
+    width: 4px;
+    background-color: var( --bold-text );
+}
+
+relationships {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
