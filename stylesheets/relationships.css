@@ -148,7 +148,7 @@ body {
     position: absolute;
     margin: 200px 3%;
     width: 94%;
-    height: calc( ( 100vh - 320px ) );
+    height: calc( ( 94vh - 200px ) );
 
     text-align: justify;
 
