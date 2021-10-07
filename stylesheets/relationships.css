@@ -132,7 +132,7 @@ body {
 
     text-align: center;
 
-    font-size: 8vh;
+    font-size: 60px;
     font-family: Questrial;
 
     color: #DDD;
@@ -146,13 +146,13 @@ body {
 #information .body {
     display: inline-block;
     position: absolute;
-    margin: 16vh 3%;
+    margin: 164px 3%;
     width: 94%;
-    height: 80%;
+    height: calc( ( 100vh - 200px ) );
 
     text-align: justify;
 
-    font-size: 2vh;
+    font-size: 16px;
     font-family: Calibri;
 
     overflow-y: auto;
